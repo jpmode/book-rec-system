@@ -6,7 +6,7 @@ Mar 10 2024
 
 
 # Load dataset
-books_df = pd.read_csv("/Users/supahmo/Desktop/Goodreads_books_with_genres.csv")
+books_df = pd.read_csv("Goodreads_books_with_genres.csv")
 
 # Preprocess data
 books_df.dropna(how='any', inplace=True)
