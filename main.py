@@ -1,9 +1,12 @@
-import pandas as pd
 '''
 BOOK RECOMMENDER SYSTEM
 Mar 10 2024
+
 '''
 
+import pandas as pd
+from fuzzywuzzy import process
+from sklearn.metrics.pairwise import cosine_similarity
 
 # Load dataset
 books_df = pd.read_csv("Goodreads_books_with_genres.csv")
@@ -22,7 +25,7 @@ booksEncoded_df = pd.concat([books_df, genres_df], axis=1)
 booksEncoded_df.drop('genres', axis=1, inplace=True)
 
 # To find similar book titles
-from fuzzywuzzy import process
+# from fuzzywuzzy import process
 
 def find_similar_books(user_input, dataset_titles, threshold=80):
     matches = process.extract(user_input, dataset_titles, limit=10)
@@ -111,7 +114,7 @@ user_item_matrix = user_item_matrix.apply(pd.to_numeric, errors='coerce').fillna
 weighted_genre_vector = filtered_genres_df_transposed_filled.mul(user_item_matrix.values.flatten(), axis=1).sum(axis=1)
 
 # Calculate cosine similarity
-from sklearn.metrics.pairwise import cosine_similarity
+# from sklearn.metrics.pairwise import cosine_similarity
 weighted_genre_vector = weighted_genre_vector.values.reshape(1, -1)
 cosine_sim = cosine_similarity(weighted_genre_vector, genres_df.values)
 
