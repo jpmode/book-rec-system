@@ -1,9 +1,11 @@
 # Book Recommender System
-This project is a book recommendation system that suggests books to users based on their past ratings and reading preferences. It utilizes a dataset of books with genres and applies a combination of user-item matrix construction, genre-based filtering, and cosine similarity to generate recommendations.
+This project implements a book recommendation system that suggests books to users based on their past ratings and reading preferences. The system utilizes a dataset of books with genres and applies a combination of user-item matrix construction, genre-based filtering, and cosine similarity to generate recommendations.
 
-Libraries: Pandas, Scikit-learn, FuzzyWuzzy 
-
-Data from Kaggle: https://www.kaggle.com/datasets/middlelight/goodreadsbookswithgenres, last downloaded March 2024
+## Tech Stack
+- **Programming Language:** Python  
+- **Libraries:** Pandas, Scikit-Learn, FuzzyWuzzy
+- **Data Source:** Kaggle [GoodReads Books with Genres](https://www.kaggle.com/datasets/middlelight/goodreadsbookswithgenres) 
+- **Data Downloaded:** March 2024
 
 ## Features
 - Loads and preprocess dataset 
