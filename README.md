@@ -3,13 +3,11 @@ This project implements a book recommendation system that suggests books to user
 
 ## Tech Stack
 - **Programming Language:** Python  
-- **Libraries:** Pandas, Scikit-Learn, FuzzyWuzzy, streamlit, kagglehub, matplotlib, seaborn
-
+- **Libraries:** Pandas, Scikit-Learn, FuzzyWuzzy
 - **Data Source:** Kaggle [GoodReads Books with Genres](https://www.kaggle.com/datasets/middlelight/goodreadsbookswithgenres) 
 - **Data Downloaded:** March 2024
 
 ## Features
-Main Branch (Recommendation System)
 - Loads and preprocess dataset 
 - Collects user input for book ratings
 - Handles misspelled or similar book titles using fuzzy matching
@@ -17,17 +15,8 @@ Main Branch (Recommendation System)
 - Computes a weighted genre preference vector
 - Applies cosine similarity to recommend books based on the user's reading history
 - Stores the user’s past reads and generated recommendations in a text file (user_reads_and_recommendations.txt)
-### Development Branch (Streamlit Dashboard)
-- Streamlit Dashboard (In Progress):
-- Top Rated Books: Displays the highest-rated books from the dataset.
-- Genre Distribution: Visualizes the distribution of book genres.
-- Most Popular Books by Year: Displays the most popular books, grouped by publication year.
-- Rating Distribution: Shows the distribution of ratings for all books.
 
 ## Installation & Setup
-### Requirements
-Python 3.x
-pip install pandas streamlit kagglehub matplotlib seaborn
 
 ### 1. Clone the Repository
 ```bash
