@@ -26,8 +26,8 @@ This project implements a book recommendation system that suggests books to user
 
 ## Installation & Setup
 ### Requirements
-Python 3.x
-pip install pandas streamlit kagglehub matplotlib seaborn
+- Python 3.x
+- pip install pandas streamlit kagglehub matplotlib seaborn
 
 ### 1. Clone the Repository
 ```bash
