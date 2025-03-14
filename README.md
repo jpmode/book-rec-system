@@ -9,7 +9,7 @@ This project implements a book recommendation system that suggests books to user
 - **Data Downloaded:** March 2024
 
 ## Features
-Main Branch (Recommendation System)
+### Main Branch (Recommendation System)
 - Loads and preprocess dataset 
 - Collects user input for book ratings
 - Handles misspelled or similar book titles using fuzzy matching
