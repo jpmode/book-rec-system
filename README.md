@@ -9,7 +9,7 @@ This project implements a book recommendation system that suggests books to user
 - **Data Downloaded:** March 2024
 
 ## Features
-### Main Branch (Recommendation System)
+Main Branch (Recommendation System)
 - Loads and preprocess dataset 
 - Collects user input for book ratings
 - Handles misspelled or similar book titles using fuzzy matching
@@ -26,8 +26,8 @@ This project implements a book recommendation system that suggests books to user
 
 ## Installation & Setup
 ### Requirements
-- Python 3.x
-- pip install pandas streamlit kagglehub matplotlib seaborn
+Python 3.x
+pip install pandas streamlit kagglehub matplotlib seaborn
 
 ### 1. Clone the Repository
 ```bash
