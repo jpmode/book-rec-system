@@ -8,6 +8,7 @@ This project implements a book recommendation system that suggests books to user
 - **Data Downloaded:** March 2024
 
 ## Features
+### Main Branch (Recommendation System)
 - Loads and preprocess dataset 
 - Collects user input for book ratings
 - Handles misspelled or similar book titles using fuzzy matching
@@ -15,6 +16,13 @@ This project implements a book recommendation system that suggests books to user
 - Computes a weighted genre preference vector
 - Applies cosine similarity to recommend books based on the user's reading history
 - Stores the user’s past reads and generated recommendations in a text file (user_reads_and_recommendations.txt)
+
+### Development Branch (Streamlit Dashboard)
+*in progress*
+- Top Rated Books: Displays the highest-rated books from the dataset.
+- Genre Distribution: Visualizes the distribution of book genres.
+- Most Popular Books by Year: Displays the most popular books, grouped by publication year.
+- Rating Distribution: Shows the distribution of ratings for all books.
 
 ## Installation & Setup
 
